@@ -10,20 +10,30 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return globalPlanets.count
     }
     
     @IBOutlet weak var TableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameDescription: UILabel!
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell ID")
+        var item = globalPlanets[indexPath.row]
+        cell?.textLabel!.text = item.name
+        cell?.detailTextLabel!.text = item.description
+        cell?.imageView?.image = item.image
         return cell!
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let mercury = Planet(name: "Mercury", description: "Mercury is a planet", image: UIImage(named: "Screen Shot")!)
+        globalPlanets.append(mercury)
+        TableView.dataSource = self
+        TableView.delegate = self 
+        
         // Do any additional setup after loading the view.
     }
     

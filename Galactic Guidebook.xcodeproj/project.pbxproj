@@ -13,6 +13,7 @@
 		3CDEDEC224AA380B00397545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CDEDEC024AA380B00397545 /* Main.storyboard */; };
 		3CDEDEC424AA381300397545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CDEDEC324AA381300397545 /* Assets.xcassets */; };
 		3CDEDEC724AA381300397545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CDEDEC524AA381300397545 /* LaunchScreen.storyboard */; };
+		DBC51F9D24AA486D00DB4C88 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC51F9C24AA486C00DB4C88 /* Planet.swift */; };
 		E5ABDF3124AA409B00FE0A3D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ABDF3024AA409B00FE0A3D /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		3CDEDEC324AA381300397545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CDEDEC624AA381300397545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CDEDEC824AA381300397545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC51F9C24AA486C00DB4C88 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		E5ABDF3024AA409B00FE0A3D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				3CDEDEBC24AA380B00397545 /* SceneDelegate.swift */,
 				3CDEDEBE24AA380B00397545 /* ViewController.swift */,
 				3CDEDEC024AA380B00397545 /* Main.storyboard */,
+				DBC51F9C24AA486C00DB4C88 /* Planet.swift */,
 				E5ABDF3024AA409B00FE0A3D /* FirstViewController.swift */,
 				3CDEDEC324AA381300397545 /* Assets.xcassets */,
 				3CDEDEC524AA381300397545 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				3CDEDEBB24AA380B00397545 /* AppDelegate.swift in Sources */,
 				3CDEDEBD24AA380B00397545 /* SceneDelegate.swift in Sources */,
 				E5ABDF3124AA409B00FE0A3D /* FirstViewController.swift in Sources */,
+				DBC51F9D24AA486D00DB4C88 /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D3QY2YU3NL;
 				INFOPLIST_FILE = "Galactic Guidebook/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D3QY2YU3NL;
 				INFOPLIST_FILE = "Galactic Guidebook/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
